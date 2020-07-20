@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>prosopopoeia</title>
+		<title>Advanced Search</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		
 		<style>
 			#roundMe {
 				border-radius: 25px;
@@ -13,14 +14,18 @@
 			}
 			
 			#buttnContainer {	
-				margin: 10px;
 				position: relative;
-				left: 12%;								
+				left: 35%;								
 			}
 
 			#link_container {
 				position: absolute;
 				right: 5%;
+			}
+			
+			.inputContainer {
+				margin: 10px;
+				
 			}
 			
 			<!-- .h_center {
@@ -31,38 +36,45 @@
 			.v_center {
 				position: absolute;
 				
-				transform: translate(170%, 300%);
+				transform: translate(170%,120%);
 			}
-			
 			input[type=submit] {
-				margin: 10px;
-				border: none;
-				height: 40px;
-			    background-color: #f0f0f0;
-				color: black;
-			
-			
+			    background-color: #4466ff;
+				color: white;
+			}
 		</style>
 	</head>
 	
 	<body>
 		
 		<div id="link_container">
-			<a href="advanced.html">Advanced Search</a> | 
-			<a href="image.html">Image Search</a>
+			<a href="index.html">Home</a>
 		</div>
 		
 		<div class="v_center">
-
+			
+			<!-- as_q=all+these&as_epq=exact+word&as_oq=any+word&as_eq=none+& -->
+			
+			<div>Find Pages with
 			<form action="https://google.com/search">
-				
-				<input id="roundMe" type="text" name="q">
-				
-				<div id="buttnContainer">
-				<input type="submit" value="Google Search">
-				<input value="I'm Feeling Lucky" name="btnI" type="submit">
+							
+				<div class="inputContainer">
+					<input type="text" name="as_q"> all these words:
 				</div>
+				<div class="inputContainer">
+					<input type="text" name="as_epq"> This exact word or phrase:
+				</div>
+				<div class="inputContainer">
+					<input type="text" name="as_oq"> any of these words:
+				</div>
+				<div class="inputContainer">
+					<input type="text" name="as_eq"> none of these words:
+				</div>
+				
+				<input type="submit" value="Advanced Search">
+				
 			</form>
+			
 		</div>
 		
 		

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>prosopopoeia</title>
+		<title>Image Search</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 		<style>
 			#roundMe {
@@ -13,9 +13,8 @@
 			}
 			
 			#buttnContainer {	
-				margin: 10px;
 				position: relative;
-				left: 12%;								
+				left: 35%;								
 			}
 
 			#link_container {
@@ -34,22 +33,13 @@
 				transform: translate(170%, 300%);
 			}
 			
-			input[type=submit] {
-				margin: 10px;
-				border: none;
-				height: 40px;
-			    background-color: #f0f0f0;
-				color: black;
-			
-			
 		</style>
 	</head>
 	
 	<body>
 		
 		<div id="link_container">
-			<a href="advanced.html">Advanced Search</a> | 
-			<a href="image.html">Image Search</a>
+			<a href="index.html">Home</a>			
 		</div>
 		
 		<div class="v_center">
@@ -57,10 +47,10 @@
 			<form action="https://google.com/search">
 				
 				<input id="roundMe" type="text" name="q">
+				<input type="hidden" name="tbm" value="isch">
 				
 				<div id="buttnContainer">
-				<input type="submit" value="Google Search">
-				<input value="I'm Feeling Lucky" name="btnI" type="submit">
+				<input type="submit" value="Image Search">
 				</div>
 			</form>
 		</div>
