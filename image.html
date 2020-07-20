@@ -6,7 +6,7 @@
 		<style>
 			#roundMe {
 				border-radius: 25px;
-				width: 400px;
+				width: 540px;
 				padding: 10px 10px 10px 10px;
 				margin: 10px;
 				box-sizing: border-box;
@@ -22,15 +22,22 @@
 				right: 5%;
 			}
 			
-			<!-- .h_center {
-				border: 1px solid green;
-				float: right;
-				width: 1000px;
-			} -->
-			.v_center {
+			#glogo {
+				position: relative;
+				left: 25%;
+			}
+			
+			#imglogo {
+				color: blue;
+				font-size: 14pt;
 				position: absolute;
-				
-				transform: translate(170%, 300%);
+				top: 34%;
+				left: 70%;
+			}
+			
+			.v_center {
+				position: absolute;				
+				transform: translate(130%, 130%);
 			}
 			
 		</style>
@@ -43,7 +50,8 @@
 		</div>
 		
 		<div class="v_center">
-
+			<div id="glogo"> <img src="images/googleimg.png"></div>
+			<div id="imglogo">Images</div>
 			<form action="https://google.com/search">
 				
 				<input id="roundMe" type="text" name="q">
