@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Image Search</title>
+		<title>prosopopoeia</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 		<style>
 			#roundMe {
 				border-radius: 25px;
 				width: 540px;
-				padding: 10px 10px 10px 10px;
+				padding: 10px 10px 10px 10px;     
 				margin: 10px;
 				box-sizing: border-box;
 			}
 			
 			#buttnContainer {	
+				margin: 10px;
 				position: relative;
-				left: 35%;								
+				left: 19%;								
 			}
 
 			#link_container {
@@ -22,43 +23,44 @@
 				right: 5%;
 			}
 			
-			#glogo {
-				position: relative;
-				left: 25%;
-			}
-			
-			#imglogo {
-				color: blue;
-				font-size: 14pt;
-				position: absolute;
-				top: 34%;
-				left: 70%;
-			}
-			
+			<!-- .h_center {
+				border: 1px solid green;
+				float: right;
+				width: 1000px;
+			} -->
 			.v_center {
-				position: absolute;				
-				transform: translate(130%, 130%);
+				position: absolute;
+				
+				transform: translate(140%, 50%);
 			}
 			
+			input[type=submit] {
+				margin: 10px;
+				border: none;
+				height: 40px;
+			    background-color: #f0f0f0;
+				color: black;
+			
+		7805$C@dYS7	
 		</style>
 	</head>
 	
 	<body>
 		
 		<div id="link_container">
-			<a href="index.html">Home</a>			
+			<a href="advanced.html">Advanced Search</a> | 
+			<a href="image.html">Image Search</a>
 		</div>
 		
 		<div class="v_center">
-			<div id="glogo"> <img src="images/googleimg.png"></div>
-			<div id="imglogo">Images</div>
+			<div id="glogo"> <img src="images/google.png"></div>
 			<form action="https://google.com/search">
 				
 				<input id="roundMe" type="text" name="q">
-				<input type="hidden" name="tbm" value="isch">
 				
 				<div id="buttnContainer">
-				<input type="submit" value="Image Search">
+				<input type="submit" value="Google Search">
+				<input value="I'm Feeling Lucky" name="btnI" type="submit">
 				</div>
 			</form>
 		</div>
