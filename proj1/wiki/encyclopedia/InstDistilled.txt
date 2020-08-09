@@ -1,0 +1,14 @@
+object:
+Entry Page (wiki/TITLE) - disp entry
+Index - listing/w links to entry
+search, in sidebar
+newPage
+Edit page
+random page link _> leads to random entry
+
+
+convert markdown to HTM->
+
+implement newPage
+entrypage
+searchbox

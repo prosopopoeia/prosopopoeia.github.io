@@ -1,0 +1,18 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    <h1>{{ label }}: {{ dtitle }}</h1>
+	<div id="body">
+		{{ dbody|safe }}
+	</div>
+	 <form method="post" action="{% url 'wiki:editpage' dtitle %}">
+		{% csrf_token %}	
+		{{ tapform.as_p }}
+		<input type='submit' value="{{ msg }}">
+		</form>
+
+{% endblock %}
